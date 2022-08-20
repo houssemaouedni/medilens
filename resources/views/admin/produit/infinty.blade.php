@@ -12,7 +12,7 @@
 
                     <div class="row">
                         <div class="col-6 border">
-                            <h1>Liste des verres INFINTY</h1>
+                 
                             <br>
                             <table class="table-responsive table">
                                 <thead>
