@@ -52,9 +52,8 @@ class ProduitController extends Controller
             ]);
             return redirect()->route('admin')->with('success', 'Produit ajouté avec succès');
         } catch (\Throwable $th) {
-
-            ddd($th);
-            // return redirect()->route('admin')->with('error', 'Erreur lors de l\'ajout du produit');
+            // ddd($th);
+            return redirect()->route('admin')->with('error', 'Erreur lors de l\'ajout du produit');
         }
 
     }
