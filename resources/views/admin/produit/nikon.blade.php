@@ -25,11 +25,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @for($i = 1; $i > count($produits); $i++)
-                                    @endfor
                                     @foreach ($produits as $produit)
                                     <tr>
-                                        <th scope="row">{{ $i++ }}</th>
+                                        <th scope="row">{{ $produit->id }}</th>
                                         <td>{{ $produit->nom }}</td>
                                         <td>{{ $produit->description }}</td>
                                         <td>{{ $produit->categorie->nom }}</td>
