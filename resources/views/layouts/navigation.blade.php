@@ -23,7 +23,7 @@
                           <li><a class="dropdown-item" href="{{ route('nikon') }}">Nikon</a></li>
                           <li><a class="dropdown-item" href="{{ route('infinty') }}">Infinty</a></li>
                         </ul>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('Suivi_Commande')">
+                    <x-nav-link :href="route('suivi')" :active="request()->routeIs('suivi')">
                         {{ __('Suivi Commande') }}
                     </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('E-Catalogue')">

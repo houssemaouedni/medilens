@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('description');
-            $table->string('prix_Ht');
+            $table->string('prix');
+            $table->string('thumbnail');
             $table->foreignId('categorie_id')->constrained();
             $table->timestamps();
         });

@@ -20,6 +20,14 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'role',
+        'raison_sociale',
+        'MF',
+        'code',
+        'adresse',
+        'telephone',
+        'fax',
+        'responsable',
         'password',
     ];
 
@@ -41,4 +49,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function commande()
+    {
+        return $this->hasMany(Commande::class);
+    }
 }
