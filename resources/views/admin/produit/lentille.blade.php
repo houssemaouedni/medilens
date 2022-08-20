@@ -11,7 +11,6 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <div class="row">
                         <div class="col-6 border">
-                            <h1>Liste des lentille</h1>
                             <br>
                             <table class="table-responsive table">
                                 <thead>
