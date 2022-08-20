@@ -22,11 +22,9 @@
                           </tr>
                         </thead>
                         <tbody>
-                            @for($i = 1; $i > count($commandes); $i++)
-                            @endfor
                                 @foreach ($commandes as $commande)
                                 <tr>
-                                    <th scope="row">{{ $i++ }}</th>
+                                    <th scope="row">{{ $commande->id }}</th>
                                     <td>0000{{ $commande->id }}</td>
                                     <td>{{ $commande->user->name }}</td>
                                     <td>{{ $commande->user->telephone }}</td>
