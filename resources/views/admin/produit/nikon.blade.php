@@ -12,7 +12,6 @@
 
                     <div class="row">
                         <div class="col-6 border">
-                            
                             <br>
                             <table class="table-responsive table">
                                 <thead>
