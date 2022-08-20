@@ -15,16 +15,20 @@ return new class extends Migration
     {
         Schema::create('commandes', function (Blueprint $table) {
             $table->id();
-            $table->string('quantite');
-            $table->string('prix_total');
             $table->string('etat');
-            $table->string('od');
-            $table->string('og');
-            $table->string('axe_od');
-            $table->string('axe_og');
+            $table->string('od_sph');
+            $table->string('od_cyl');
+            $table->string('od_axe');
             $table->string('od_add');
+            $table->string('og_sph');
+            $table->string('og_cyl');
+            $table->string('og_axe');
             $table->string('og_add');
             $table->foreignId('produit_id')->constrained();
+            $table->string('od_quantite');
+            $table->string('og_quantite');
+            $table->string('prix_ht');
+            $table->string('prix_total');
             $table->foreignId('client_id')->constrained();
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
